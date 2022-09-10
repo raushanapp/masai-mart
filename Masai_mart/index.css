@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family:Montserrat,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    top:0;
+    padding: 0px;
+    place-items: center;
+}
+#navar{
+    display: flex;
+    width: 99.8%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.masai-mart{
+    margin-left: 100px;
+    font-size: 22px;
+}
+/* grid dispaly  */
+
+.jobContainer{
+    display: grid;
+    /* border: 1px solid gainsboro; */
+    width: 95%;
+    margin: auto;
+    /* max-height: 400vh; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* padding: 15px; */
+    margin-top: 40px;
+    grid-template-rows: 480px 480px 480px;
+    grid-template-columns: 420px 420px 420px;
+
+}
+.jobContainer > div {
+    border:1px solid #ccc;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+#image{
+    width: 400px;
+    height:300px;
+    padding: 20px;
+}
+
+/* filter by */
+
+#selectByCategory{
+    width: 20%;
+    height: 40px;
+    margin-left: 100px;
+    font-size: 18px;
+    padding-left: 10px;
+    /* display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around; */
+
+}
+#sortBy{
+    width: 20%;
+    height: 40px;
+    margin-left: 100px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+@media only screen and (min-width:0px) and (max-width:375px) {
+    .jobContainer{
+        display: grid;
+        /* border: 1px solid gainsboro; */
+        width: 95%;
+        margin: auto;
+        /* max-height: 400vh; */
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        /* padding: 15px; */
+        margin-top: 40px;
+        grid-template-rows: repeat(10,48px);
+        grid-template-columns: 420px;
+    
+    }
+    .jobContainer > div {
+        border:1px solid #ccc;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        border-radius: 15px;
+    }
+    #image{
+        width: 400px;
+        height:300px;
+        padding: 20px;
+    }
+    #navbar{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:0px) and (max-width:675px) {
+    .jobContainer{
+        display: grid;
+        /* border: 1px solid gainsboro; */
+        width: 95%;
+        margin: auto;
+        /* max-height: 400vh; */
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        /* padding: 15px; */
+        margin-top: 40px;
+        grid-template-rows: repeat(5,48px);
+        grid-template-columns: 420px 420px;
+    
+    }
+    .jobContainer > div {
+        border:1px solid #ccc;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        border-radius: 15px;
+    }
+    #image{
+        width: 400px;
+        height:300px;
+        padding: 20px;
+    }
+    #navbar{
+        display: none;
+    }
+}
+
